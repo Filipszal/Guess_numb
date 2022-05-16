@@ -1,27 +1,6 @@
 'use strict';
 
 
-// document.querySelector('.message').textContent = '🎉 Correct Answer';
-
-// const number_set = Math.trunc(Math.random() *20) + 1;
-
-// const proper_number = document.querySelector('.number').textContent = number_set;
-
-// document.querySelector('.check').addEventListener('click', function () {
-//     const guessValue = Number(document.querySelector('.guess').value);
-//     if (!guessValue) {
-//         document.querySelector('.message').textContent = '🛑 No number!';
-//     }
-//     else if (number_set === guessValue) {
-//         document.querySelector('.message').textContent = '😀Your number is correct!';
-//     }
-//     else if (number_set < guessValue) {
-//         document.querySelector('.message').textContent = '😔Your number is greater than the secret number!';
-//     }
-//     else if (number_set > guessValue) {
-//         document.querySelector('.message').textContent = '😔Your number is lower than the secret number!';
-//     }
-// });
 
 
 
@@ -32,9 +11,7 @@ const scoreValue = document.querySelector('.score');
 let value = 20;
 let highScore = 0;
 
-// document.querySelector('.number').textContent = secretNumber;
 
-//
 const displayMessage = function(message) {
     messageForUser.textContent = message;
 }
@@ -80,18 +57,3 @@ document.querySelector('.again').addEventListener('click', function () {
     scoreValue.value = 20;
     // document.querySelector('score').textContent = value;
 })
-
-
-
-
-
-
-  // else if (user_number < secretNumber) {
-    //     messageForUser.textContent = '🙄Your guess is Lower than the secret number!';
-    //     value = value -1;
-    //     scoreValue.textContent = value;
-    //     if (value <= 0) {
-    //         messageForUser.textContent = 'You lost the game😔';
-    //         scoreValue.textContent = 0;
-    //     }
-    // }
